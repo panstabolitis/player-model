@@ -1,0 +1,30 @@
+{
+  "format": 1,
+  "id": "player",
+  "name": "Player",
+  "description": "The player character: head, torso, two arms and two legs, with a hair / hat layer on the head.",
+  "parts": [
+    { "id": "root", "name": "Body", "parent": null, "pivot": [0, 13, 0], "boxes": [] },
+    { "id": "legR", "name": "Right leg", "parent": "root", "pivot": [-2, 13, 0], "boxes": [
+      { "name": "right leg", "from": [-3.5, 2, -1.5], "to": [-0.5, 13, 1.5], "uv": [0, 32], "shade": 0.89 },
+      { "name": "right foot", "from": [-3.5, 0, -1.5], "to": [-0.5, 2, 2.5], "uv": [24, 32], "shade": 0.89 }
+    ] },
+    { "id": "legL", "name": "Left leg", "parent": "root", "pivot": [2, 13, 0], "boxes": [
+      { "name": "left leg", "from": [0.5, 2, -1.5], "to": [3.5, 13, 1.5], "uv": [12, 32], "shade": 0.95 },
+      { "name": "left foot", "from": [0.5, 0, -1.5], "to": [3.5, 2, 2.5], "uv": [38, 32], "shade": 0.95 }
+    ] },
+    { "id": "torso", "name": "Torso", "parent": "root", "pivot": [0, 13, 0], "boxes": [
+      { "name": "torso", "from": [-3.5, 13, -1.5], "to": [3.5, 26, 1.5], "uv": [0, 16] }
+    ] },
+    { "id": "head", "name": "Head", "parent": "torso", "pivot": [0, 26, 0], "order": "yxz", "role": "head", "boxes": [
+      { "name": "head", "from": [-4, 26, -4], "to": [4, 34, 4], "uv": [0, 0], "shade": 1.06 },
+      { "name": "head layer", "from": [-4, 26, -4], "to": [4, 34, 4], "inflate": 0.25, "uv": [32, 0], "layer": true }
+    ] },
+    { "id": "armR", "name": "Right arm", "parent": "torso", "pivot": [-5, 23.5, 0], "boxes": [
+      { "name": "right arm", "from": [-6.5, 12, -1.5], "to": [-3.5, 25, 1.5], "uv": [20, 16], "shade": 0.96 }
+    ] },
+    { "id": "armL", "name": "Left arm", "parent": "torso", "pivot": [5, 23.5, 0], "boxes": [
+      { "name": "left arm", "from": [3.5, 12, -1.5], "to": [6.5, 25, 1.5], "uv": [32, 16], "shade": 0.98 }
+    ] }
+  ]
+}
